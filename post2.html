@@ -1,49 +1,29 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Best Practices for React Development</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-  <header>
-    <h1>Programming Forum</h1>
-    <p>Discuss all things programming!</p>
-  </header>
+<main>
+  <article class="post-detail">
+    <h2>Best Practices for React Development</h2>
+    <p class="author">By: Jane Smith</p>
+    <p class="content">
+      Here are some best practices for React development:
+      1. Use functional components and hooks.
+      2. Keep components small and reusable.
+      3. Use PropTypes or TypeScript for type checking.
+      4. Optimize performance with React.memo and useCallback.
+    </p>
+  </article>
 
-  <main>
-    <article class="post-detail">
-      <h2>Best Practices for React Development</h2>
-      <p class="author">By: Jane Smith</p>
-      <p class="content">
-        Here are some best practices for React development:
-        1. Use functional components and hooks.
-        2. Keep components small and reusable.
-        3. Use PropTypes or TypeScript for type checking.
-        4. Optimize performance with React.memo and useCallback.
-      </p>
-    </article>
-
-    <section class="comments">
-      <h3>Comments</h3>
-      <div class="comment">
-        <p class="comment-author">Charlie:</p>
-        <p class="comment-text">Great tips! React.memo is a lifesaver.</p>
-      </div>
-      <div class="comment">
-        <p class="comment-author">Dana:</p>
-        <p class="comment-text">I love using TypeScript with React. Highly recommend it!</p>
-      </div>
-      <form class="add-comment">
-        <textarea placeholder="Add a comment..." required></textarea>
-        <button type="submit">Post Comment</button>
-      </form>
-    </section>
-  </main>
-
-  <footer>
-    <p>&copy; 2023 Programming Forum</p>
-  </footer>
-</body>
-</html>
+  <section class="comments">
+    <h3>Comments</h3>
+    <div class="comment">
+      <p class="comment-author">Charlie:</p>
+      <p class="comment-text">Great tips! React.memo is a lifesaver.</p>
+    </div>
+    <div class="comment">
+      <p class="comment-author">Dana:</p>
+      <p class="comment-text">I love using TypeScript with React. Highly recommend it!</p>
+    </div>
+    <form class="add-comment">
+      <textarea placeholder="Add a comment..." required></textarea>
+      <button type="submit">Post Comment</button>
+    </form>
+  </section>
+</main>
