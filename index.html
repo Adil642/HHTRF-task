@@ -17,10 +17,18 @@
       <div class="post">
         <h2><a href="post1.html">How to Learn Python Fast</a></h2>
         <p class="author">By: John Doe</p>
+        <div class="votes">
+          <button onclick="upvote('post1')">👍 <span id="post1-upvotes">0</span></button>
+          <button onclick="downvote('post1')">👎 <span id="post1-downvotes">0</span></button>
+        </div>
       </div>
       <div class="post">
         <h2><a href="post2.html">Best Practices for React Development</a></h2>
         <p class="author">By: Jane Smith</p>
+        <div class="votes">
+          <button onclick="upvote('post2')">👍 <span id="post2-upvotes">0</span></button>
+          <button onclick="downvote('post2')">👎 <span id="post2-downvotes">0</span></button>
+        </div>
       </div>
     </section>
   </main>
@@ -28,5 +36,17 @@
   <footer>
     <p>&copy; 2023 Programming Forum</p>
   </footer>
+
+  <script>
+    function upvote(postId) {
+      const upvotes = document.getElementById(`${postId}-upvotes`);
+      upvotes.innerText = parseInt(upvotes.innerText) + 1;
+    }
+
+    function downvote(postId) {
+      const downvotes = document.getElementById(`${postId}-downvotes`);
+      downvotes.innerText = parseInt(downvotes.innerText) + 1;
+    }
+  </script>
 </body>
 </html>
