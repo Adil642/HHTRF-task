@@ -1,0 +1,90 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+header {
+  background-color: #007BFF;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+}
+
+main {
+  padding: 20px;
+}
+
+/* Post List Styles */
+.posts {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.post {
+  background-color: white;
+  padding: 15px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post h2 {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.post h2 a {
+  color: #007BFF;
+  text-decoration: none;
+}
+
+.post h2 a:hover {
+  text-decoration: underline;
+}
+
+.post .author {
+  margin: 5px 0 0;
+  font-size: 0.9em;
+  color: #666;
+}
+
+/* Post Detail Styles */
+.post-detail {
+  background-color: white;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-detail h2 {
+  margin: 0 0 10px;
+}
+
+.post-detail .author {
+  margin: 0 0 15px;
+  font-size: 0.9em;
+  color: #666;
+}
+
+.post-detail .content {
+  line-height: 1.6;
+}
+
+/* Footer Styles */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #007BFF;
+  color: white;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
